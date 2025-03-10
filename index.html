@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> <!-- contains metadata -->
+    <meta charset="utf-8" /> <!-- ensures that special characters (like Japanese characters) display correctly.-->
+    <title>Geimu 0 : Bubu_Ball</title>
+    <style> 
+        * { 
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+        }
+
+        body { 
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            background-color: #282c34; 
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        canvas {
+            display: block;
+            background: #2c1f11;
+        }
+
+        h1, button {
+            margin: 10px;
+            color: #2c1f11;
+            background-color: #e7ddd2;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="myCanvas" width="480" height="320"></canvas>
+        <h1 style="color: #2c1f11">Bubu is hungry! Oh no, the Donuts are flying! Catch them!</h1>
+        <button onclick="sayHello()" style="color: #2c1f11" >message from Dudu</button>
+        <button onclick="draw_start()">Start Game</button>
+    </div>
+    <script src="script.js"></script>
+ 
+
+</body>
+</html>
